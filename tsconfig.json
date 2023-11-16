@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "es6",
+    "target": "es2015",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "types": [
+      "matter-js",
+      "node"
+    ],
+  },
+  "include": [
+    "src/**/*.ts",
+    "custom.d.ts",
+  ]
+}
