@@ -1,4 +1,9 @@
-# Client Engineer Game Development Coding Assignment
+# Open source platform game
+This is an open-source game inspired by a coding challenge I once received. I enjoyed the game immensely and chose to expand and update it further, now unrestrained by the original challenge rules. Who doesn't love games!
+
+Below is the original challenge.
+
+# Client Engineer Game Development Coding Challenge
 
 ## General rules
 - Technologies to use: Pixi.js, TweenMax, JS
@@ -18,11 +23,11 @@ A revised jumping game that includes at least one additional game element of you
 
 ## Game Specification
 
-### The purpose of this assignment
+### The purpose of this challenge
 
 The purpose of the assignment is to show off your skills, both in terms of how you solve a problem and how you structure code within the existing codebase. Additionally, you can demonstrate your eye for visual design (layout, animations). 
 
-The main focus of this assignment is to check your ability to write clean, well-structured and reusable code. Please be prepared to discuss the new code you wrote during the interview process.
+The main focus of this assignment is to check your ability to write clean, well-structured and reusable code. Please be prepared to discuss the new code you wrote during the review process.
 
 ### Create one additional game element
 
