@@ -15,7 +15,7 @@ export class Platform {
     height: number;
     dx: number;
     container: PIXI.Container;
-    body: ExtendedBodyPlatform | null;
+    body: ExtendedBodyPlatform;
 
     constructor(rows: number, cols: number, x: number) {
         // [10]

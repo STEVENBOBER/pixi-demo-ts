@@ -4,8 +4,8 @@ import * as PIXI from 'pixi.js';
 import { ExtendedBodyDiamond } from '../../ts/interface';
 
 export class Diamond {
-    sprite: PIXI.Sprite;
-    body: ExtendedBodyDiamond;
+    public sprite: PIXI.Sprite;
+    public body: ExtendedBodyDiamond;
 
     constructor(x: number, y: number) {
         this.createSprite(x, y);

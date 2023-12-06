@@ -18,7 +18,6 @@ interface ScoreConfig {
   };
 }
 
-// string
 
 interface ChanceOffsetConfig {
   chance: number;
@@ -129,4 +128,10 @@ export interface PlatformRanges {
 
 export interface ExtendedBodySlime extends Matter.Body {
   gameSlime?: Slime;
+}
+
+
+// interface for Loader.ts
+export interface LoaderConfig {
+  loader: { key: string; data: { default: string } }[];
 }

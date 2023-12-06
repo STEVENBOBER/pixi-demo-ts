@@ -4,14 +4,19 @@ import { App } from '../system/App';
 import { ExtendedBodySlime } from "../../ts/interface";
 
 export class Slime {
+  // Type safety for slime animation
   sprite: PIXI.AnimatedSprite;
   body: ExtendedBodySlime;
 
+  // Constructs sprite and adds slime update method to list of ticker 
+  // functions to render and update in game slime.
   constructor(x: number, y: number) {
     this.createSprite(x, y);
     App.app.ticker.add(this.update, this);
   }
 
+  // Creates and loops through slime animations.
+  // It sets animations posistion and starts it.
   createSprite(x: number, y: number) {
     this.sprite = new PIXI.AnimatedSprite([
       App.res("Attack1"),
@@ -24,9 +29,6 @@ export class Slime {
     this.sprite.loop = true;
     this.sprite.animationSpeed = 0.01;
     this.sprite.play();
-
-
-
   }
 
   update() {

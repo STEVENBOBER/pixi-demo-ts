@@ -2,9 +2,9 @@ import * as PIXI from 'pixi.js';
 import { App } from '../system/App';
 
 export class Background {
-  speed: number;
-  container: PIXI.Container;
-  sprites: PIXI.Sprite[];
+  public speed: number;
+  public container: PIXI.Container;
+  public sprites: PIXI.Sprite[];
 
   constructor() {
     this.speed = App.config.bgSpeed;
