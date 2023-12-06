@@ -2,6 +2,8 @@ import { Tools } from "../system/Tools";
 import { GameScene } from "./GameScene";
 import { ConfigType } from "../../ts/interface";
 
+// Added ConfigType to increase type safety of
+// Config values.
 
 export const Config: ConfigType = {
     loader: Tools.massiveRequire(require["context"]('./../../sprites/', true, /\.(mp3|png|jpe?g)$/)),
@@ -24,6 +26,8 @@ export const Config: ConfigType = {
             max: 200
         }
     },
+
+    // Sets position and chance of enemy slime appearing. 
     slimes: {
         chance: 0.2,
         offset: {
@@ -31,6 +35,7 @@ export const Config: ConfigType = {
             max: 40
         },
     },
+
     platforms: {
         moveSpeed: -2.0,
         ranges: {

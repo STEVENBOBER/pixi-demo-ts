@@ -3,8 +3,8 @@ import { App } from "./App";
 import { Scene } from "./Scene";
 
 export class ScenesManager {
-    container: PIXI.Container;
-    scene: Scene
+    public container: PIXI.Container;
+    public scene: Scene
 
     constructor() {
         this.container = new PIXI.Container();
@@ -14,11 +14,14 @@ export class ScenesManager {
 
     start(scene: string) {
         if (this.scene) {
-            this.scene.destroy();
+            this.scene.destroy?.();
         }
 
-        this.scene = new App.config.scenes[scene]();
-        this.container.addChild(this.scene.container);
+        const SceneClass = App.config.scenes[scene];
+        if (SceneClass) {
+            this.scene = new SceneClass();
+            this.container.addChild(this.scene.container);
+        }
     }
 
     update(dt: number) {

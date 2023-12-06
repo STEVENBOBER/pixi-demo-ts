@@ -7,11 +7,12 @@ import { ScenesManager } from "./ScenesManager";
 import { Config } from '../game/Config';
 
 class Application {
-    app: PIXI.Application;
-    loader: Loader;
-    scenes: ScenesManager;
-    physics: Matter.Engine;
-    config: typeof Config;
+    public app: PIXI.Application;
+    public loader: Loader;
+    public scenes: ScenesManager;
+    public physics: Matter.Engine;
+    public stage: PIXI.Container;
+    public config: typeof Config;
 
 
     run(config: typeof Config) {
